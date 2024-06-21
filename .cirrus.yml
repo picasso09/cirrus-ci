@@ -18,8 +18,8 @@ task:
        - export DEBIAN_FRONTEND=noninteractive
        - mkdir -p ~/.config/rclone
        - echo "$rcloneconfig" > ~/.rclone.conf
-       - git config --global user.name "denysaja"
-       - git config --global user.email "deny_saja@hotmail.com"
+       - git config --global user.name "picasso09"
+       - git config --global user.email "picasso09@hotmail.com"
        - echo "$credentials" > ~/.git-credentials
        - git config --global credential.helper store --file=~/.git-credentials
        - mkdir -p ~/ccache
@@ -50,10 +50,10 @@ task:
       - curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Sync Completed!"
 
   Build_script:
-      - export BUILD_USERNAME="deny2311"
-      - export BUILD_HOSTNAME="deny"
-      - export KBUILD_BUILD_USER="deny2311"
-      - export KBUILD_BUILD_HOST="deny"
+      - export BUILD_USERNAME="picasso09"
+      - export BUILD_HOSTNAME="DV-WORK"
+      - export KBUILD_BUILD_USER="picasso09"
+      - export KBUILD_BUILD_HOST="DV-WORK"
 #      - export WITH_GAPPS=true
       - sudo ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
       - curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Build qassa for sagit Started!"
