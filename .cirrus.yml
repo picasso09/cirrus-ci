@@ -2,9 +2,9 @@ env:
     credentials: "ENCRYPTED[!d3c4731cf2aea0309c49bfa0ed861977c9367824d01e4dfc07ef9c641cfd47f58676f8573dcb84e762087bc92c8140d5!]"
     rcloneconfig: "ENCRYPTED[!8e127cebdf38df395dcd677a4877bb867146001f3ba3b3e5292cd4a325e315273c74d0804b5c8ec41fe0bf3f4e13ef85!]"
     tokentl: "ENCRYPTED[!c07de33b1227d4decd64465c0d9038b42b5635ce998f6edb5b02985176f81e9af4d0537ac8938cb79e5434bf5802f64d!]"
-    idtl: "ENCRYPTED[!ada2145d95983d2e2a41ae80fa27318da5a8980170db84992d9235c4dbcd190374eeeb76f47c815ab2ed55ddd087637d!]"
-    lunch: lunch qassa_sagit-user
-    make: make qassa
+    idtl: "ENCRYPTED[!619d9a2e4f770e5d94313f5c22971ad8ab19221a07cbe0757e76638cbe19b99b946c3355dcceb2d17c4b721da68f261e!]"
+    lunch: lunch qassa_RMX2185-user
+    make: mka qassa
 
 task:
   name: "Setting Up, Syncing, Building and Uploading..."
