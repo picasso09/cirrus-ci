@@ -3,7 +3,7 @@ env:
     rcloneconfig: "ENCRYPTED[!1906726d95baaa1fe1bd9bf68d36d7ab31acfd7cf53d56abcb7db0d96ac897e8113566766922052f1d6961d77680d8ba!]"
     tokentl: "ENCRYPTED[!c07de33b1227d4decd64465c0d9038b42b5635ce998f6edb5b02985176f81e9af4d0537ac8938cb79e5434bf5802f64d!]"
     idtl: "ENCRYPTED[!619d9a2e4f770e5d94313f5c22971ad8ab19221a07cbe0757e76638cbe19b99b946c3355dcceb2d17c4b721da68f261e!]"
-    lunch: lunch qassa_RMX2185-user
+    lunch: lunch qassa_RMX2020-user
     make: mka qassa
 
 task:
@@ -45,7 +45,7 @@ task:
 #      - repoo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8 --fail-fast
       - repo sync -c -j8 --force-sync --no-clone-bundle --no-tags
       - sed -i 's| -u||g' vendor/qassa/config/branding.mk
-      - git clone --depth=1 https://github.com/picasso09/android_device_realme_RMX2185 -b qassa device/realme/RMX2185
+      - git clone --depth=1 https://github.com/picasso09/device_realme_RMX2020 -b qassa device/realme/RMX2020
       - curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Sync Completed!"
 
   Build_script:
@@ -55,10 +55,10 @@ task:
       - export KBUILD_BUILD_HOST="DV-WORK"
 #      - export WITH_GAPPS=true
       - sudo ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
-      - curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Build qassa for RMX2185 Started!"
+      - curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Build qassa for RMX2020 Started!"
 #      - ./collect.sh
       - ./final.sh
-      - curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Build $(cd ~/rom/out/target/product/RMX2185/ && ls qassa*.zip) Completed!"
+      - curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Build $(cd ~/rom/out/target/product/RMX2020/ && ls qassa*.zip) Completed!"
 
   Upload_script:
       - ./upload.sh
