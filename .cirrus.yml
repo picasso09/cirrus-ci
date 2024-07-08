@@ -53,7 +53,7 @@ task:
       - export BUILD_HOSTNAME="DV-WORK"
       - export KBUILD_BUILD_USER="picasso09"
       - export KBUILD_BUILD_HOST="DV-WORK"
-#      - export WITH_GAPPS=true
+      - export WITH_GAPPS=true
       - sudo ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
       - curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Build qassa for RMX2185 Started!"
 #      - ./collect.sh
