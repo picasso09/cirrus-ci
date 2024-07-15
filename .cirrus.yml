@@ -45,7 +45,7 @@ task:
 #      - repoo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8 --fail-fast
       - repo sync -c -j8 --force-sync --no-clone-bundle --no-tags
       - sed -i 's| -u||g' vendor/qassa/config/branding.mk
-      - git clone --depth=1 https://github.com/picasso09/android_device_realme_RMX2185 -b qassa device/realme/RMX2185
+      - git clone --depth=1 https://github.com/picasso09/android_device_realme_RMX2185 -b qassa-c12 device/realme/RMX2185
       - curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Sync Completed!"
 
   Build_script:
